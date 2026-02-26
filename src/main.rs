@@ -41,59 +41,58 @@ fn main() {
                 let stringgraph = Interactive {
                     interactive: filepath.clone(),
                 };
-                let unpackfilepath = stringgraph.intercative().unwrap();
-                if taxonid.unwrap() != None.unwrap() {
-                    let value = stringgraph.searchtaxa(&taxonid.unwrap()).unwrap();
+                if taxonid.clone().unwrap().len() != 0usize {
+                    let value = stringgraph.searchtaxa(&taxonid.clone().unwrap()).unwrap();
                     for i in value.iter(){
-                    print!("Source taxon id", "Source taxon tds", "Source taxon name", "Source path names", "Source path ids", "Source taxon subgenus ids", "Source taxon genus name", "Source family id", "Source family name", "Rest of the information", {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}, i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
+                    print!("Source taxon id:{}\nSource taxon tds:{}\nSource taxon name:{}\nSource path names:{}\nSource path ids:{}\nSource taxon subgenus ids:{}\nSource taxon genus name{}\nSource family id:{}\nSource family name:{}\nRest of the information:{:?}\n", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
                     }
                 }
-                if taxontds.unwrap() != None.unwrap() {
-                    let value = stringgraph.searchtaxaon(&taxontds.unwrap()).unwrap();
+                if taxontds.clone().unwrap().len() != 0usize {
+                    let value = stringgraph.searchtaxaon(&taxontds.clone().unwrap()).unwrap();
                     for i in value.iter(){
-                    print!("Source taxon id", "Source taxon tds", "Source taxon name", "Source path names", "Source path ids", "Source taxon subgenus ids", "Source taxon genus name", "Source family id", "Source family name", "Rest of the information", {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}, i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
+                    print!("Source taxon id:{}\nSource taxon tds:{}\nSource taxon name:{}\nSource path names:{}\nSource path ids:{}\nSource taxon subgenus ids:{}\nSource taxon genus name{}\nSource family id:{}\nSource family name:{}\nRest of the information:{:?}\n", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
                     }
                 }
-                if taxonname.unwrap() != None.unwrap() {
-                    let value = stringgraph.searchname(&taxonname.unwrap()).unwrap();
+                if taxonname.clone().unwrap().len() != 0usize {
+                    let value = stringgraph.searchname(&taxonname.clone().unwrap()).unwrap();
                     for i in value.iter(){
-                    print!("Source taxon id", "Source taxon tds", "Source taxon name", "Source path names", "Source path ids", "Source taxon subgenus ids", "Source taxon genus name", "Source family id", "Source family name", "Rest of the information", {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}, i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
+                    print!("Source taxon id:{}\nSource taxon tds:{}\nSource taxon name:{}\nSource path names:{}\nSource path ids:{}\nSource taxon subgenus ids:{}\nSource taxon genus name{}\nSource family id:{}\nSource family name:{}\nRest of the information:{:?}\n", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
                     }
                 }
-                if taxonpathid.unwrap() != None.unwrap() {
-                    let value = stringgraph.searchid(&taxonpathid.unwrap()).unwrap();
+                if taxonpathid.clone().unwrap().len() != 0usize {
+                    let value = stringgraph.searchid(&taxonpathid.clone().unwrap()).unwrap();
                     for i in value.iter(){
-                    print!("Source taxon id", "Source taxon tds", "Source taxon name", "Source path names", "Source path ids", "Source taxon subgenus ids", "Source taxon genus name", "Source family id", "Source family name", "Rest of the information", {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}, i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
+                    print!("Source taxon id:{}\nSource taxon tds:{}\nSource taxon name:{}\nSource path names:{}\nSource path ids:{}\nSource taxon subgenus ids:{}\nSource taxon genus name{}\nSource family id:{}\nSource family name:{}\nRest of the information:{:?}\n", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
                     }
                 }
-                if taxonsubgenusid.unwrap() != None.unwrap() {
-                    let value = stringgraph.searchgenusid(&taxonsubgenusid.unwrap()).unwrap();
+                if taxonsubgenusid.clone().unwrap().len() != 0usize {
+                    let value = stringgraph.searchgenusid(&taxonsubgenusid.clone().unwrap()).unwrap();
                     for i in value.iter(){
-                    print!("Source taxon id", "Source taxon tds", "Source taxon name", "Source path names", "Source path ids", "Source taxon subgenus ids", "Source taxon genus name", "Source family id", "Source family name", "Rest of the information", {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}, i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
+                    print!("Source taxon id:{}\nSource taxon tds:{}\nSource taxon name:{}\nSource path names:{}\nSource path ids:{}\nSource taxon subgenus ids:{}\nSource taxon genus name{}\nSource family id:{}\nSource family name:{}\nRest of the information:{:?}\n", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
                     }
                 }
-                if taxongenusname.unwrap() != None.unwrap() {
-                    let value = stringgraph.searchgenusname(&taxongenusname.unwrap()).unwrap();
+                if taxongenusname.clone().unwrap().len() != 0usize {
+                    let value = stringgraph.searchgenusname(&taxongenusname.clone().unwrap()).unwrap();
                     for i in value.iter(){
-                    print!("Source taxon id", "Source taxon tds", "Source taxon name", "Source path names", "Source path ids", "Source taxon subgenus ids", "Source taxon genus name", "Source family id", "Source family name", "Rest of the information", {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}, i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
+                    print!("Source taxon id:{}\nSource taxon tds:{}\nSource taxon name:{}\nSource path names:{}\nSource path ids:{}\nSource taxon subgenus ids:{}\nSource taxon genus name{}\nSource family id:{}\nSource family name:{}\nRest of the information:{:?}\n", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
                     }
                 }
-                if taxonfamilyid.unwrap() != None.unwrap() {
-                    let value = stringgraph.searchfamilyid(&taxonfamilyid.unwrap()).unwrap();
+                if taxonfamilyid.clone().unwrap().len() != 0usize {
+                    let value = stringgraph.searchfamilyid(&taxonfamilyid.clone().unwrap()).unwrap();
                     for i in value.iter(){
-                    print!("Source taxon id", "Source taxon tds", "Source taxon name", "Source path names", "Source path ids", "Source taxon subgenus ids", "Source taxon genus name", "Source family id", "Source family name", "Rest of the information", {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}, i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
+                    print!("Source taxon id:{}\nSource taxon tds:{}\nSource taxon name:{}\nSource path names:{}\nSource path ids:{}\nSource taxon subgenus ids:{}\nSource taxon genus name{}\nSource family id:{}\nSource family name:{}\nRest of the information:{:?}\n", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
                     }
                 }
-                if taxonname.unwrap() != None.unwrap() {
-                    let value = stringgraph.searchfamilyname(&taxonname.unwrap()).unwrap();
+                if taxonname.clone().unwrap().len() != 0usize {
+                    let value = stringgraph.searchfamilyname(&taxonname.clone().unwrap()).unwrap();
                     for i in value.iter(){
-                    print!("Source taxon id", "Source taxon tds", "Source taxon name", "Source path names", "Source path ids", "Source taxon subgenus ids", "Source taxon genus name", "Source family id", "Source family name", "Rest of the information {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
+                    print!("Source taxon id:{}\nSource taxon tds:{}\nSource taxon name:{}\nSource path names:{}\nSource path ids:{}\nSource taxon subgenus ids:{}\nSource taxon genus name{}\nSource family id:{}\nSource family name:{}\nRest of the information:{:?}\n", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
                     }
                 }
-                if wildsearch.unwrap() != None.unwrap() {
-                    let value = stringgraph.wildsearch(&wildsearch.unwrap()).unwrap();
+                if wildsearch.clone().unwrap().len() != 0usize {
+                    let value = stringgraph.wildsearch(&wildsearch.clone().unwrap()).unwrap();
                     for i in value.iter(){
-                    print!("Source taxon id", "Source taxon tds", "Source taxon name", "Source path names", "Source path ids", "Source taxon subgenus ids", "Source taxon genus name", "Source family id", "Source family name", "Rest of the information", {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}, i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
+                    print!("Source taxon id:{}\nSource taxon tds:{}\nSource taxon name:{}\nSource path names:{}\nSource path ids:{}\nSource taxon subgenus ids:{}\nSource taxon genus name{}\nSource family id:{}\nSource family name:{}\nRest of the information:{:?}\n", i.sourcetaxonid, i.sourcetaxontds, i.sourcetaxonname, i.sourcetaxonpathnames, i.sourcetaxonpathids, i.sourcetaxonsubgenusid, i.sourcetaxongenusname, i.sourcetaxonfamilyid, i.sourcetaxonfamilyname, i.reststring);
                     }
                 }
             });
