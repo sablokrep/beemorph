@@ -5,10 +5,5 @@ edition = "2024"
 
 [dependencies]
 clap = { version = "4.5.59", features = ["derive"] }
-smartcore = { version = "0.4.9" }
-burn = { version = "0.19.1", features = ["train", "vision", "network", "cpu", "cuda", "ndarray", "wgpu", "dataset", "std", "autodiff", "fusion", "store", "doc", "metrics"] }
-xgb = { version = "3", default-features = false, features = ["local_build"] }
-ndarray = "0.15"
-ndarray-csv = "0.5"
-rand = "0.9.2"
+figlet-rs = "0.1.5"
 rayon = "1.11.0"
