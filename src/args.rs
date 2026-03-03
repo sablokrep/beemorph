@@ -18,28 +18,100 @@ pub struct CommandParse {
 #[derive(Subcommand, Debug)]
 pub enum Commands {
     /// browse the interactions
-    Interactive {
+    TaxonID {
         /// path to the file
         filepath: String,
         /// threads for the analysis
         thread: String,
         /// search by taxonid
-        taxonid: Option<String>,
+        taxonid: String,
+    },
+    /// browse according to taxontds
+    TaxonTds {
+        /// path to the file
+        filepath: String,
+        /// threads for the analysis
+        thread: String,
         /// search by taxontds
-        taxontds: Option<String>,
+        taxontds: String,
+    },
+    /// browse according to taxonname
+    TaxonName {
+        /// path to the file
+        filepath: String,
+        /// threads for the analysis
+        thread: String,
         /// search by taxonname
-        taxonname: Option<String>,
+        taxonname: String,
+    },
+    /// browse according to taxonpathname
+    TaxonPathName {
+        /// path to the file
+        filepath: String,
+        /// threads for the analysis
+        thread: String,
+        /// search by taxonpath
+        taxonpathname: String,
+    },
+    /// browse according to taxonpathids
+    TaxonpathID {
+        /// path to the file
+        filepath: String,
+        /// threads for the analysis
+        thread: String,
         /// search by taxon path id
-        taxonpathid: Option<String>,
+        taxonpathid: String,
+    },
+    /// browse according to taxonsubgenusid
+    TaxonSubGenusID {
+        /// path to the file
+        filepath: String,
+        /// threads for the analysis
+        thread: String,
         /// search by the taxon sub genus id
-        taxonsubgenusid: Option<String>,
+        taxonsubgenusid: String,
+    },
+    /// browse according to taxongenusname
+    TaxonGenusName {
+        /// path to the file
+        filepath: String,
+        /// threads for the analysis
+        thread: String,
         /// search by the taxon genus name
-        taxongenusname: Option<String>,
+        taxongenusname: String,
+    },
+    /// browse according to taxonfamilyid
+    TaxonFamilyID {
+        /// path to the file
+        filepath: String,
+        /// threads for the analysis
+        thread: String,
         /// search by taxon family id
-        taxonfamilyid: Option<String>,
+        taxonfamilyid: String,
+    },
+    /// browse according to taxonfamilyname
+    TaxonFamilyName {
+        /// path to the file
+        filepath: String,
+        /// threads for the analysis
+        thread: String,
         /// search by taxon family name
-        taxonfamilyname: Option<String>,
+        taxonfamilyname: String,
+    },
+    /// browse according to wildsearch
+    WildSearch {
+        /// path to the file
+        filepath: String,
+        /// threads for the analysis
+        thread: String,
         /// search wild categoris
-        wildsearch: Option<String>,
+        wildsearch: String,
+    },
+    /// make a database
+    DiversityDatabase {
+        /// filepath
+        pathfile: String,
+        /// number of threads
+        threads: String,
     },
 }

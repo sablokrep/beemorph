@@ -14,5 +14,5 @@ pub struct InteractiveMap {
     pub sourcetaxongenusname: String,
     pub sourcetaxonfamilyid: String,
     pub sourcetaxonfamilyname: String,
-    pub reststring: Vec<String>,
+    pub reststring: String,
 }

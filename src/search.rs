@@ -12,7 +12,7 @@ impl Interactive {
         let interactivemap = self.intercative().unwrap();
         let mut searchvec: Vec<InteractiveMap> = Vec::new();
         for i in interactivemap.iter() {
-            if i.sourcetaxonid == taxonid {
+            if i.sourcetaxonid.contains(taxonid) {
                 searchvec.push(InteractiveMap {
                     sourcetaxonid: i.sourcetaxonid.clone(),
                     sourcetaxontds: i.sourcetaxontds.clone(),
@@ -34,7 +34,7 @@ impl Interactive {
         let interactivemap = self.intercative().unwrap();
         let mut searchvec: Vec<InteractiveMap> = Vec::new();
         for i in interactivemap.iter() {
-            if i.sourcetaxontds == taxontds {
+            if i.sourcetaxontds.contains(taxontds) {
                 searchvec.push(InteractiveMap {
                     sourcetaxonid: i.sourcetaxonid.clone(),
                     sourcetaxontds: i.sourcetaxontds.clone(),
@@ -213,7 +213,7 @@ impl Interactive {
         let interactivemap = self.intercative().unwrap();
         let mut searchvec: Vec<InteractiveMap> = Vec::new();
         for i in interactivemap.iter() {
-            if i.reststring.concat().to_string().contains(wildname) {
+            if i.reststring.contains(wildname) {
                 searchvec.push(InteractiveMap {
                     sourcetaxonid: i.sourcetaxonid.clone(),
                     sourcetaxontds: i.sourcetaxontds.clone(),
